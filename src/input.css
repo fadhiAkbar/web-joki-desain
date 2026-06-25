@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("../assets/fonts/Fredoka-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces_72pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces_72pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces_72pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frederic";
+  src: url("../assets/fonts/FrederickatheGreat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-fraunces: "Fraunces", sans-serif;
+  --font-frederic: "Frederic", sans-serif;
+}
+
+
+.text-outline {
+  text-shadow:
+    3px 0 0 #FF5F09,
+   -3px 0 0 #FF5F09,
+    0 3px 0 #FF5F09,
+    0 -3px 0 #FF5F09;
+}

@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      class="min-h-screen lg:h-[110vh] bg-[linear-gradient(to_left,#AAFFF1_0%,#AAFFF1_45%,#FF5F09_100%)]"
+    >
+      <nav
+        class="flex justify-between items-center px-4 md:px-8 lg:px-[150px] py-5 relative"
+      >
+        <!-- Logo -->
+        <img src="../assets/DESIGN.png" alt="" />
+
+        <!-- Menu Desktop -->
+        <ul
+          class="hidden lg:flex gap-x-16 font-fredoka font-semibold text-black"
+        >
+          <li>HOME</li>
+          <li>
+            HARGA LAYANAN
+            <i class="fa-solid fa-chevron-down text-[12px]"></i>
+          </li>
+          <li>DESIGN</li>
+          <li>
+            PORTOFOLIO
+            <i class="fa-solid fa-chevron-down text-[12px]"></i>
+          </li>
+          <li>CARA PESAN</li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button id="menu-btn" class="lg:hidden flex flex-col gap-1">
+          <span class="w-7 h-1 bg-black rounded"></span>
+          <span class="w-7 h-1 bg-black rounded"></span>
+          <span class="w-7 h-1 bg-black rounded"></span>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-b-2xl z-50"
+        >
+          <ul
+            class="flex flex-col items-center py-6 gap-y-6 font-fredoka font-semibold"
+          >
+            <li>HOME</li>
+            <li class="text-[#FF5B03]">HARGA LAYANAN</li>
+            <li>DESIGN</li>
+            <li>PORTOFOLIO</li>
+            <li>CARA PESAN</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div
+        class="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-x-[100px] mt-8 px-4"
+      >
+        <h1
+          class="w-full max-w-[576px] text-[32px] md:text-[42px] lg:text-[55px] text-center lg:text-left font-fredoka font-bold text-white text-outline"
+        >
+          Jasa Pembuatan Design: poster, logo & mockup UMKM dan UKM Termurah
+        </h1>
+
+        <img
+          src="../assets/header-img.png"
+          alt=""
+          class="w-[280px] md:w-[400px] lg:w-[550px]"
+        />
+      </div>
+
+      <button
+        class="bg-white w-[220px] h-[60px] font-fredoka font-bold rounded-full text-[20px] block mx-auto lg:ml-[250px] mt-8"
+      >
+        Konsultasi Gratis
+      </button>
+    </header>
+
+    <div class="relative lg:-mt-8 z-20 flex justify-center px-4">
+      <div
+        class="w-full max-w-[1200px] rounded-[28px] border-[6px] border-white shadow-[0_15px_35px_rgba(0,0,0,0.25)] px-10 py-8"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- FAST RESPON -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <img
+              src="../assets/fast-respon.svg"
+              alt=""
+              class="w-[50px] h-[50px]"
+            />
+
+            <div>
+              <h3 class="font-fredoka text-[28px] font-bold">Fast Respon</h3>
+
+              <p class="font-fraunces text-[18px] mt-2 leading-tight w-[166px]">
+                Siap membantu anda dengan respon cepat
+              </p>
+            </div>
+          </div>
+
+          <!-- TIM PROFESIONAL -->
+          <div class="flex gap-5 md:px-8 md:border-l-4 border-[#2F695F]">
+            <img
+              src="../assets/profesional.svg"
+              alt=""
+              class="w-[50px] h-[50px]"
+            />
+
+            <div>
+              <h3 class="font-fredoka text-[28px] font-bold">
+                Tim Profesional
+              </h3>
+
+              <p class="font-fraunces text-[18px] mt-2 leading-tight">
+                Tim Profesional, Tanpa Telat
+              </p>
+            </div>
+          </div>
+
+          <!-- GRATIS -->
+          <div class="flex gap-5 md:pl-8 md:border-l-4 border-[#FF5F09]">
+            <img src="../assets/gratis.svg" alt="" class="w-[80px] h-[80px]" />
+
+            <div>
+              <h3 class="font-fredoka text-[28px] font-bold">Gratis</h3>
+
+              <p class="font-fraunces text-[18px] mt-2 leading-tight">
+                Konsultasi Awal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="min-h-screen pt-[80px] md:pt-[120px] lg:pt-[150px] px-4">
+      <div class="flex flex-col items-center gap-y-[32px]">
+        <h1
+          class="font-fraunces font-bold text-[26px] md:text-[32px] lg:text-[36px] text-center"
+        >
+          Tentang Joki Design UMKM
+        </h1>
+
+        <p
+          class="text-black font-fraunces text-center max-w-[880px] text-[18px] md:text-[22px] lg:text-[25px]"
+        >
+          Joki design merupakan layanan jasa pembuatan Poster, Logo & Mockup
+          UMKM. Di era digital seperti sekarang sangat penting dan bisnis juga
+          harus tampil di google sebab semua orang mencari sesuatu di internet
+          pada mesin pencari google. Ketika bisnis anda mudah ditemukan di
+          google maka peluang mendapatkan pelanggan sangat besar.
+        </p>
+
+        <p
+          class="text-black font-fraunces text-center max-w-[880px] text-[18px] md:text-[22px] lg:text-[25px]"
+        >
+          Joki design sudah membantu puluhan pebisnis dalam meningkatkan omzet
+          penjualan, memperluas jangkauan pasar, brand awareness dan lain
+          sebagainya. Silahkan hubungi kami untuk pemesanan Poster, Logo &
+          Mockup UMKM.
+        </p>
+      </div>
+
+      <div
+        class="my-[120px] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-x-[50px]"
+      >
+        <div
+          class="w-full max-w-[300px] h-[280px] md:h-[300px] bg-white rounded-[24px] p-6 shadow-[0_12px_25px_rgba(0,0,0,0.12)]"
+        >
+          <div
+            class="bg-[#DEFFFA] rounded-[8px] w-[50px] h-[50px] flex justify-center items-center shadow-[0_6px_15px_rgba(0,0,0,0.15)]"
+          >
+            <img
+              src="../assets/pengerjaan-cepat.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+
+          <h1 class="text-black font-fraunces text-[28px] font-bold mt-14">
+            Pengerjaan Cepat
+          </h1>
+        </div>
+
+        <div
+          class="w-full max-w-[300px] h-[280px] md:h-[300px] bg-white rounded-[24px] p-6 shadow-[0_12px_25px_rgba(0,0,0,0.12)]"
+        >
+          <div
+            class="bg-[#DEFFFA] rounded-[8px] w-[50px] h-[50px] flex justify-center items-center shadow-[0_6px_15px_rgba(0,0,0,0.15)]"
+          >
+            <img
+              src="../assets/profesional.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+
+          <h1 class="text-black font-fraunces text-[28px] font-bold mt-14">
+            Tim Profesional
+          </h1>
+        </div>
+
+        <div
+          class="w-full max-w-[300px] h-[280px] md:h-[300px] bg-white rounded-[24px] p-6 shadow-[0_12px_25px_rgba(0,0,0,0.12)]"
+        >
+          <div
+            class="bg-[#DEFFFA] rounded-[8px] w-[50px] h-[50px] flex justify-center items-center shadow-[0_6px_15px_rgba(0,0,0,0.15)]"
+          >
+            <img src="../assets/harga.svg" alt="" class="w-[30px] h-[30px]" />
+          </div>
+
+          <h1
+            class="text-black font-fraunces text-[28px] font-bold mt-14 flex justify-center"
+          >
+            Gratis Konsultasi
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="min-h-screen flex flex-col items-center px-4 py-20">
+      <button
+        class="font-fraunces font-bold text-black text-[25px] md:text-[22px] sm:text-[18px] w-[320px] md:w-[280px] sm:w-[220px] h-[60px] md:h-[55px] sm:h-[45px] bg-[linear-gradient(to_right,#F8FFFE_0%,#F8FFFE_45%,#DEFFFA_100%)] rounded-2xl shadow-[0_8px_0_#BDBDBD]"
+      >
+        Paket website UMKM
+      </button>
+
+      <h1
+        class="font-fraunces font-bold text-[32px] md:text-[28px] sm:text-[24px] pt-[80px] md:pt-[60px] sm:pt-[40px] text-center"
+      >
+        Paket dan harga website UMKM
+      </h1>
+
+      <p
+        class="w-full max-w-[840px] md:w-[650px] sm:w-[90%] text-center text-[25px] md:text-[22px] sm:text-[18px] font-fraunces mt-[18px]"
+      >
+        Pilih paket website UMKM sesuai kebutuhan usaha Anda. Tersedia pilihan
+        website sederhana, website katalog, dan landing page promosi untuk
+        membantu bisnis kecil tampil lebih profesional tanpa biaya yang terlalu
+        besar.
+      </p>
+
+      <div
+        class="w-full max-w-[1160px] lg:h-[150px] md:h-[130px] h-[100px] flex justify-between items-center px-[12px] md:px-[20px] lg:px-[32px] bg-[linear-gradient(to_right,#F8FFFE_0%,#F8FFFE_25%,#BAFFF4_100%)] shadow-[0_8px_0_#BDBDBD] rounded-[30px] lg:rounded-[50px] mt-[80px]"
+      >
+        <!-- Box Hijau -->
+        <div
+          class="bg-[#2F695F] w-[220px] md:w-[380px] lg:w-[600px] h-[65px] md:h-[90px] lg:h-[110px] shadow-[0_8px_0_#BDBDBD] rounded-[18px] md:rounded-[25px] lg:rounded-[30px] flex justify-center items-center"
+        >
+          <h1
+            class="text-white font-fraunces font-bold text-[12px] md:text-[20px] lg:text-[25px]"
+          >
+            Pilihan Paket UMKM
+          </h1>
+        </div>
+
+        <!-- Teks Kanan -->
+        <h1
+          class="text-black font-fraunces font-bold text-[14px] md:text-[20px] lg:text-[25px] ml-[10px] md:ml-[20px] lg:mr-[120px]"
+        >
+          Landing Page UMKM
+        </h1>
+      </div>
+
+      <div
+        class="flex flex-col xl:flex-row items-center justify-center gap-10 mt-[120px] w-full"
+      >
+        <!-- Bagian kiri -->
+        <div
+          class="w-full max-w-[580px] md:w-[500px] sm:w-full h-auto md:h-auto sm:h-auto rounded-[30px] shadow-[0_12px_25px_rgba(0,0,0,0.12)] flex flex-col items-center md:px-6 sm:px-4 sm:py-8"
+        >
+          <div class="flex flex-col items-center">
+            <h1
+              class="text-[32px] md:text-[28px] sm:text-[24px] font-fredoka font-semibold mt-[70px] md:mt-[50px] sm:mt-[30px] text-center"
+            >
+              Paket Kilat (Poster Saja)
+            </h1>
+            <p
+              class="font-fraunces text-[25px] md:text-[22px] sm:text-[18px] mt-[32px] md:mt-[24px] sm:mt-[16px] text-center px-4"
+            >
+              1 Desain Poster, Revisi 1x, File JPG/PNG
+            </p>
+            <h1
+              class="font-fredoka font-semibold text-[24px] md:text-[22px] sm:text-[20px] mt-[75px] md:mt-[50px] sm:mt-[30px]"
+            >
+              Rp25.000 – Rp50.000
+            </h1>
+            <hr class="mt-[32px] w-[450px] md:w-[380px] sm:w-[90%]" />
+          </div>
+          <p
+            class="text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[420px] text-left mx-auto mt-[32px]"
+          >
+            fitur standar yang kami tawarkan dalam Paket Kilat:
+          </p>
+
+          <!-- card 1 -->
+          <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+            <img
+              class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+              src="../assets/pengerjaan-cepat.svg"
+              alt=""
+            />
+            <h1
+              class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[320px] sm:w-full"
+            >
+              Kecepatan Pengerjaan (Sameday Service)
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+          >
+            <ul
+              class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[300px] sm:w-[90%]"
+            >
+              <li>
+                Selesai dalam waktu 3 hingga 12 jam setelah pembayaran dan
+                detail produk dikirim.
+              </li>
+
+              <li>
+                Anda bisa memanfaatkan template instan (seperti Canva) atau aset
+                desain yang sudah Anda miliki untuk mempercepat proses.
+              </li>
+            </ul>
+          </div>
+
+          <!-- card 2 -->
+          <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+            <img
+              class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+              src="../assets/file.svg"
+              alt=""
+            />
+            <h1
+              class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[320px] sm:w-full"
+            >
+              Format File Siap Pakai
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+          >
+            <ul
+              class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[300px] sm:w-[90%]"
+            >
+              <li>1 File Gambar (JPG atau PNG) dengan resolusi tinggi (HD).</li>
+
+              <li>
+                Ukuran disesuaikan kebutuhan klien, umumnya aspek rasio 1:1
+                (Feed Instagram/WA) atau 9:16 (Story Instagram/Status WA).
+              </li>
+            </ul>
+          </div>
+
+          <!-- card 3 -->
+          <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6>">
+            <img
+              class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+              src="../assets/konten.svg"
+              alt=""
+            />
+            <h1
+              class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka lg:w-[380px] md:w-[320px] w-[300px]"
+            >
+              Batasan Konten & Revisi
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+          >
+            <ul
+              class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[300px] sm:w-[90%]"
+            >
+              <li>
+                Maksimal 1 Kali Revisi Minor: Hanya untuk perbaikan kecil
+                seperti salah ketik (typo), ganti warna teks, atau geser posisi
+                gambar. Bukan ganti total konsep desain.
+              </li>
+
+              <li>
+                Materi Ditentukan Klien: Klien wajib memberikan foto produk,
+                nama menu/jasa, harga, dan kontak yang ingin dimasukkan. Anda
+                tidak menanggung jasa foto produk atau pembuatan kalimat promosi
+                dari nol.
+              </li>
+            </ul>
+          </div>
+
+          <button
+            class="text-white bg-[#FF5B03] w-[280px] md:w-[240px] sm:w-[200px] h-[50px] md:h-[45px] sm:h-[40px] rounded-2xl text-[25px] md:text-[22px] sm:text-[18px] font-fraunces font-semibold mt-[60px] mb-[50px] md:mb-[50px] lg:mb-[50px] shadow-[0_8px_0_#BDBDBD]"
+          >
+            Pilih Paket
+          </button>
+        </div>
+
+        <!-- bagian kanan -->
+        <div
+          class="w-full max-w-[580px] md:w-[500px] sm:w-full h-auto md:h-auto sm:h-auto flex items-center flex-col rounded-[30px] shadow-[0_12px_25px_rgba(0,0,0,0.12)] md:px-6 sm:px-4 sm:py-8"
+        >
+          <div class="flex flex-col items-center">
+            <h1
+              class="text-[32px] md:text-[28px] sm:text-[24px] font-fredoka font-semibold mt-[70px] md:mt-[50px] sm:mt-[30px] text-center"
+            >
+              Paket Identitas (Logo Saja)
+            </h1>
+
+            <p
+              class="font-fraunces text-[25px] md:text-[22px] sm:text-[18px] mt-[32px] md:mt-[24px] sm:mt-[16px] w-[394px] md:w-[340px] sm:w-[90%] text-center"
+            >
+              1 Desain Logo, Kombinasi Warna, Revisi 2x, File PNG Transparan
+            </p>
+
+            <h1
+              class="font-fredoka font-semibold text-[24px] md:text-[22px] sm:text-[20px] mt-[75px] md:mt-[50px] sm:mt-[30px]"
+            >
+              Rp75.000 – Rp150.000
+            </h1>
+
+            <hr class="mt-[32px] w-[450px] md:w-[380px] sm:w-[90%]" />
+          </div>
+
+          <p
+            class="text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[420px] text-left mx-auto mt-[32px]"
+          >
+            fitur standar yang kami tawarkan dalam Paket Identitas:
+          </p>
+
+          <!-- card 1 -->
+          <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+            <img
+              class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+              src="../assets/file.svg"
+              alt=""
+            />
+
+            <h1
+              class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[320px] sm:w-full"
+            >
+              Format File Lengkap (Master & Transparan)
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+          >
+            <ul
+              class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[300px] sm:w-[90%]"
+            >
+              <li>
+                File PNG Transparan (Tanpa Background): Fitur wajib agar logo
+                bisa ditempelkan klien di atas foto produk, latar belakang warna
+                apa pun, atau video mereka tanpa kotak putih di sekelilingnya.
+              </li>
+
+              <li>
+                File JPG High Resolution: Untuk kebutuhan foto profil WhatsApp
+                Business, Instagram, atau Google Maps.
+              </li>
+
+              <li>
+                File Master/Mentah (Opsional tapi Disarankan): Memberikan file
+                format Canva Link, .AI, atau .CDR. Ini menjadi nilai plus yang
+                membuat UMKM merasa puas karena mereka memiliki hak milik penuh
+                atas logo tersebut.
+              </li>
+            </ul>
+          </div>
+
+          <!-- card 2 -->
+          <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+            <img
+              class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+              src="../assets/konten.svg"
+              alt=""
+            />
+
+            <h1
+              class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[320px] sm:w-full"
+            >
+              Batasan Revisi dan Ketentuan
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+          >
+            <ul
+              class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[300px] sm:w-[90%]"
+            >
+              <li>
+                Maksimal 2 Kali Revisi Minor: Revisi meliputi perubahan jenis
+                huruf (font), penyesuaian warna, atau ukuran elemen logo.
+              </li>
+
+              <li>
+                Pengerjaan 1–3 Hari: Berikan waktu yang cukup bagi Anda untuk
+                berpikir kreatif, namun tetap relatif cepat bagi UMKM.
+              </li>
+            </ul>
+          </div>
+
+          <button
+            class="text-white bg-[#FF5B03] w-[280px] md:w-[240px] sm:w-[200px] h-[50px] md:h-[45px] sm:h-[40px] rounded-2xl text-[25px] md:text-[22px] sm:text-[18px] font-fraunces font-semibold mt-[60px] shadow-[0_8px_0_#BDBDBD] mb-[50px] md:mb-[50px] lg:mb-[50px]"
+          >
+            Pilih Paket
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="w-full max-w-[680px] md:w-[580px] sm:w-full h-auto md:h-auto sm:h-auto flex items-center flex-col rounded-[30px] shadow-[0_12px_25px_rgba(0,0,0,0.12)] mt-[150px] md:mt-[100px] sm:mt-[60px] md:px-6 sm:px-4 sm:py-8"
+      >
+        <div class="flex flex-col items-center">
+          <h1
+            class="text-[32px] md:text-[28px] sm:text-[24px] font-fredoka font-semibold mt-[70px] md:mt-[50px] sm:mt-[30px] text-center"
+          >
+            Paket UMKM Naik Kelas (Lengkap)
+          </h1>
+
+          <p
+            class="font-fraunces text-[25px] md:text-[22px] sm:text-[18px] mt-[32px] md:mt-[24px] sm:mt-[16px] w-[394px] md:w-[90%] max-w-[350px] sm:w-[90%] text-center"
+          >
+            1 Logo + 2 Poster Promosi + 2 Mockup Produk, Revisi 3x, File Master
+            (AI/CDR/Canva Link)
+          </p>
+
+          <h1
+            class="font-fredoka font-semibold text-[24px] md:text-[22px] sm:text-[20px] mt-[75px] md:mt-[50px] sm:mt-[30px]"
+          >
+            Rp199.000 – Rp299.000
+          </h1>
+
+          <hr class="mt-[32px] w-[450px] md:w-[400px] sm:w-[90%]" />
+        </div>
+
+        <p
+          class="text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[420px] text-left mx-auto mt-[32px]"
+        >
+          fitur standar yang kami tawarkan dalam Paket Identitas:
+        </p>
+
+        <!-- Card 1 -->
+        <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+          <img
+            class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+            src="../assets/file.svg"
+            alt=""
+          />
+
+          <h1
+            class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[340px] sm:w-full"
+          >
+            Semua Fitur Paket Identitas & Paket Kilat
+          </h1>
+        </div>
+
+        <div
+          class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+        >
+          <ul
+            class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[320px] sm:w-[90%]"
+          >
+            <li>
+              1 Desain Logo Utama: Format JPG, PNG Transparan, dan Panduan Warna
+              (Color Palette).
+            </li>
+
+            <li>
+              2 Desain Poster Promosi: Bisa berupa poster menu/katalog produk,
+              daftar harga, poster promo diskon, atau pengumuman pembukaan toko.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+          <img
+            class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+            src="../assets/pengerjaan-cepat.svg"
+            alt=""
+          />
+
+          <h1
+            class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[340px] sm:w-full"
+          >
+            Penambahan Fitur Mockup Produk (Visualisasi Nyata)
+          </h1>
+        </div>
+
+        <div
+          class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+        >
+          <ul
+            class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[320px] sm:w-[90%]"
+          >
+            <li>
+              2 File Mockup Premium: Foto digital realistis yang memperlihatkan
+              bagaimana logo atau label Anda jika ditempelkan pada produk asli.
+            </li>
+
+            <li>
+              Pilihan Mockup Disesuaikan Usaha Klien:
+
+              <ul
+                class="list-disc ml-[32px] md:ml-[24px] sm:ml-[20px] mt-[16px] flex flex-col gap-y-[16px]"
+              >
+                <li>
+                  Kuliner: Mockup logo pada gelas kopi plastik, kotak penutup
+                  makanan, atau botol kaca.
+                </li>
+
+                <li>
+                  Fashion: Mockup logo pada label baju (hangtag) atau kantong
+                  belanja (goodie bag).
+                </li>
+
+                <li>
+                  Jasa/Toko: Mockup papan nama toko fisik atau stempel promosi.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex gap-x-[16px] mt-[32px] justify-center w-full px-6">
+          <img
+            class="w-[50px] h-[50px] md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px]"
+            src="../assets/dev.svg"
+            alt=""
+          />
+
+          <h1
+            class="text-[20px] md:text-[18px] sm:text-[16px] font-semibold font-fredoka w-[380px] md:w-[340px] sm:w-full"
+          >
+            Penyerahan File Master / Mentah (Full Ownership)
+          </h1>
+        </div>
+
+        <div
+          class="flex flex-col items-center pl-[72px] md:pl-[50px] sm:pl-[35px]"
+        >
+          <ul
+            class="list-disc mt-4 space-y-6 font-fraunces text-[20px] md:text-[18px] sm:text-[16px] w-[90%] max-w-[350px] md:w-[320px] sm:w-[90%]"
+          >
+            <li>
+              Klien mendapatkan semua file master (.PSD, .AI, .CDR, atau Link
+              Canva) yang bisa diedit kembali.
+            </li>
+
+            <li>
+              Ini adalah daya tarik utama paket ini, karena UMKM merasa memiliki
+              aset digital mereka sepenuhnya untuk investasi jangka panjang.
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="text-white bg-[#FF5B03] w-[280px] md:w-[240px] sm:w-[200px] h-[50px] md:h-[45px] sm:h-[40px] rounded-2xl text-[25px] md:text-[22px] sm:text-[18px] font-fraunces font-semibold mt-[60px] shadow-[0_8px_0_#BDBDBD] mb-[50px] md:mb-[50px] lg:mb-[50px]"
+        >
+          Pilih Paket
+        </button>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="min-h-screen flex justify-center">
+      <img
+        class="w-[1030px] md:w-[70%] sm:w-auto"
+        src="../assets/section-3.png"
+        alt=""
+      />
+    </section>
+
+    <!-- section 4 -->
+    <section class="flex flex-col items-center px-0 lg:px-[250px]">
+      <button
+        class="my-[100px] bg-[linear-gradient(to_left,#AAFFF1_0%,#AAFFF1_45%,#FF5F09_100%)] w-[350px] h-[70px] font-fraunces text-[32px] rounded-3xl font-bold border-[6px] border-[#AAFFF1]"
+      >
+        <i> MOCKUP DESIGN </i>
+      </button>
+      <div class="mt-[28px]">
+        <div class="flex mb-[50px] gap-x-[50px] max-md:gap-x-[10px]">
+          <img
+            class="lg:w-[897px] lg:h-[360px] md:w-[620px] md:h-[250px] w-[280px] h-[112px]"
+            src="../assets/mockcup1-1.png"
+            alt=""
+          />
+          <img
+            class="lg:w-[274px] lg:h-[360px] md:w-[190px] md:h-[250px] w-[80px] h-[112px]"
+            src="../assets/mockup2-1.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex mb-[50px] gap-x-[50px] max-md:gap-x-[10px]">
+          <img
+            class="lg:w-[824px] lg:h-[360px] md:w-[570px] md:h-[250px] w-[255px] h-[112px]"
+            src="../assets/mockup1-2.png"
+            alt=""
+          />
+          <img
+            class="lg:w-[345px] lg:h-[360px] md:w-[240px] md:h-[250px] w-[106px] h-[112px]"
+            src="../assets/mockup2-2.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex mb-[50px] gap-x-[50px] max-md:gap-x-[10px]">
+          <img
+            class="lg:w-[996px] lg:h-[360px] md:w-[690px] md:h-[250px] w-[310px] h-[112px]"
+            src="../assets/mockup1-3.png"
+            alt=""
+          />
+          <img
+            class="lg:w-[194px] lg:h-[360px] md:w-[135px] md:h-[250px] w-[60px] h-[112px]"
+            src="../assets/mockup2-3.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <h1 class="font-fraunces text-[25px] text-right w-[100%]">
+        Creative Portofolio
+      </h1>
+    </section>
+
+    <!-- section 5 -->
+    <section
+      class="flex flex-col items-center px-0 lg:px-[250px] my-[60px] lg:my-[100px]"
+    >
+      <button
+        class="my-[100px] bg-[linear-gradient(to_left,#AAFFF1_0%,#AAFFF1_45%,#FF5F09_100%)] w-[350px] h-[70px] font-fraunces text-[32px] rounded-3xl font-bold border-[6px] border-[#AAFFF1]"
+      >
+        <i>LOGO DESIGN</i>
+      </button>
+
+      <!-- Desktop -->
+      <div class="hidden lg:block">
+        <div class="flex justify-center gap-x-[50px] mb-[50px]">
+          <img
+            class="w-[350px] h-[350px]"
+            src="../assets/logo-brewista.png"
+            alt=""
+          />
+          <img
+            class="w-[350px] h-[350px]"
+            src="../assets/logo-nexus.png"
+            alt=""
+          />
+          <img
+            class="w-[350px] h-[350px]"
+            src="../assets/logo-dapur-nusantara.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center gap-x-[50px]">
+          <img
+            class="w-[350px] h-[350px]"
+            src="../assets/logo-lumira.png"
+            alt=""
+          />
+          <img
+            class="w-[350px] h-[350px]"
+            src="../assets/logo-kawana.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Tablet -->
+      <div class="hidden md:block lg:hidden">
+        <div class="flex justify-center gap-x-[32px] mb-[32px]">
+          <img
+            class="w-[300px] h-[300px]"
+            src="../assets/logo-brewista.png"
+            alt=""
+          />
+          <img
+            class="w-[300px] h-[300px]"
+            src="../assets/logo-nexus.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center gap-x-[32px] mb-[32px]">
+          <img
+            class="w-[300px] h-[300px]"
+            src="../assets/logo-dapur-nusantara.png"
+            alt=""
+          />
+          <img
+            class="w-[300px] h-[300px]"
+            src="../assets/logo-lumira.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            class="w-[300px] h-[300px]"
+            src="../assets/logo-kawana.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="flex flex-col items-center md:hidden gap-y-[24px]">
+        <img
+          class="w-[250px] h-[250px]"
+          src="../assets/logo-brewista.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[250px]"
+          src="../assets/logo-nexus.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[250px]"
+          src="../assets/logo-dapur-nusantara.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[250px]"
+          src="../assets/logo-lumira.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[250px]"
+          src="../assets/logo-kawana.png"
+          alt=""
+        />
+      </div>
+
+      <h1
+        class="font-fraunces text-[25px] text-right w-[100%] mt-[16px] md:mt[32px] lg:mt-[50px]"
+      >
+        Creative Portofolio
+      </h1>
+    </section>
+
+    <!-- section 6 -->
+    <section
+      class="flex flex-col items-center px-0 lg:px-[250px] my-[60px] lg:my-[100px]"
+    >
+      <button
+        class="my-[100px] bg-[linear-gradient(to_left,#AAFFF1_0%,#AAFFF1_45%,#FF5F09_100%)] w-[350px] h-[70px] font-fraunces text-[32px] rounded-3xl font-bold border-[6px] border-[#AAFFF1]"
+      >
+        <i>POSTER DESIGN</i>
+      </button>
+
+      <!-- Desktop -->
+      <div class="hidden lg:block">
+        <div class="flex justify-center gap-x-[50px] mb-[50px]">
+          <img
+            class="w-[356px] h-[504px]"
+            src="../assets/poster-brewista.png"
+            alt=""
+          />
+          <img
+            class="w-[356px] h-[504px]"
+            src="../assets/poster-nexus.png"
+            alt=""
+          />
+          <img
+            class="w-[356px] h-[504px]"
+            src="../assets/poster-dapur-nusantara.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center gap-x-[50px]">
+          <img
+            class="w-[356px] h-[504px]"
+            src="../assets/poster-lumira.png"
+            alt=""
+          />
+          <img
+            class="w-[356px] h-[504px]"
+            src="../assets/poster-kawana.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Tablet -->
+      <div class="hidden md:block lg:hidden">
+        <div class="flex justify-center gap-x-[32px] mb-[32px]">
+          <img
+            class="w-[300px] h-[400px]"
+            src="../assets/poster-brewista.png"
+            alt=""
+          />
+          <img
+            class="w-[300px] h-[400px]"
+            src="../assets/poster-nexus.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center gap-x-[32px] mb-[32px]">
+          <img
+            class="w-[300px] h-[400px]"
+            src="../assets/poster-dapur-nusantara.png"
+            alt=""
+          />
+          <img
+            class="w-[300px] h-[400px]"
+            src="../assets/poster-lumira.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            class="w-[300px] h-[400px]"
+            src="../assets/poster-kawana.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="flex flex-col items-center md:hidden gap-y-[24px]">
+        <img
+          class="w-[250px] h-[330px]"
+          src="../assets/poster-brewista.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[330px]"
+          src="../assets/poster-nexus.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[330px]"
+          src="../assets/poster-dapur-nusantara.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[330px]"
+          src="../assets/poster-lumira.png"
+          alt=""
+        />
+        <img
+          class="w-[250px] h-[330px]"
+          src="../assets/poster-kawana.png"
+          alt=""
+        />
+      </div>
+
+      <h1
+        class="font-fraunces text-[25px] text-right w-[100%] mt-[16px] md:mt[32px] lg:mt-[50px]"
+      >
+        Creative Portofolio
+      </h1>
+    </section>
+
+    <footer
+      class="h-auto bg-[linear-gradient(to_bottom,#FF5B03_0%,#FF5B03_10%,#C4FFF5_100%)] rounded-t-4xl"
+    >
+      <div
+        class="flex flex-col lg:flex-row justify-around items-center lg:items-start border-b-8 border-[#FF5B03] pt-[60px] md:pt-[90px] lg:pt-[138px] pb-[60px] md:pb-[100px] lg:pb-[180px] px-6"
+      >
+        <!-- Logo -->
+        <div class="flex flex-col items-center lg:items-start">
+          <img
+            class="mb-[40px] lg:mb-[100px] w-[220px] md:w-[280px] lg:w-auto"
+            src="../assets/DESIGN.png"
+            alt=""
+          />
+
+          <div class="flex gap-x-[20px] md:gap-x-[32px]">
+            <img
+              class="w-[40px] h-[40px] md:w-[50px] md:h-[50px]"
+              src="../assets/logo-wa.svg"
+              alt=""
+            />
+
+            <img
+              class="w-[40px] h-[40px] md:w-[50px] md:h-[50px]"
+              src="../assets/logo-ig.svg"
+              alt=""
+            />
+
+            <img
+              class="w-[80px] h-[40px] md:w-[100px] md:h-[50px]"
+              src="../assets/logo-linkedin.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div
+          class="flex flex-col md:flex-row gap-y-[40px] md:gap-x-[80px] lg:gap-x-[160px] mt-[50px] lg:mt-0 text-center md:text-left"
+        >
+          <!-- About -->
+          <div>
+            <ul class="text-[18px] md:text-[22px] lg:text-[24px] font-fraunces">
+              <li
+                class="font-frederic text-black text-[28px] md:text-[32px] lg:text-[35px] font-black mb-[20px] md:mb-[32px]"
+              >
+                About
+              </li>
+
+              <li>My Account</li>
+              <li>Services</li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <div>
+            <ul class="text-[18px] md:text-[22px] lg:text-[24px] font-fraunces">
+              <li
+                class="font-frederic text-black text-[28px] md:text-[32px] lg:text-[35px] font-black mb-[20px] md:mb-[32px]"
+              >
+                Socials
+              </li>
+
+              <li>Instagram</li>
+              <li>Linked In</li>
+              <li>WhatsApp</li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <ul class="text-[18px] md:text-[22px] lg:text-[24px] font-fraunces">
+              <li
+                class="font-frederic text-black text-[28px] md:text-[32px] lg:text-[35px] font-black mb-[20px] md:mb-[32px]"
+              >
+                Services
+              </li>
+
+              <li>Privacy & Policy</li>
+              <li>Terms & Conditions</li>
+              <li>FAQ's</li>
+              <li>Help Center</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h1
+        class="font-fraunces text-[16px] md:text-[18px] lg:text-[20px] py-[20px] md:py-[32px] text-center"
+      >
+        Inayah_2500016009
+      </h1>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
